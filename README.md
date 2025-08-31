@@ -15,9 +15,9 @@ customer_churn/
 │
 ├── data/                              # Dataset used for model training & evaluation
 │
-├── part_1_churn_prediction            # Jupyter Notebook for training & evaluation
+├── customer_churn.ipynb               # Jupyter Notebook for training & evaluation
 │
-├── part_2_genai_email_generation      # GenAI-powered retention system
+├── customer_retention_email.ipynb     # GenAI-powered retention system
 │
 └── README.md                          # Main documentation
 ```
@@ -93,33 +93,28 @@ pip install pandas scikit-learn openai matplotlib
 ### 3. Set up LLM API
 - Generate an API key (e.g., OpenAI, Gemini).  
 - Store it securely in an environment variable.  
-- Required by `genai_script.py`.  
+- Required by `customer_retention_email.ipynb`.  
 
 ### 4. Run the Code
 - **Part I (Churn Prediction)**  
   Open Jupyter Notebook:  
   ```bash
-  jupyter notebook part_1_churn_prediction/model_training.ipynb
+  jupyter notebook customer_churn.ipynb
   ```  
 
 - **Part II (GenAI Email Generation)**  
-  Run script:  
+  Open Jupyter Notebook:  
   ```bash
-  python part_2_genai_email_generation/genai_script.py
-  ```
-
-- **View Prompts**:  
-  ```bash
-  cat part_2_genai_email_generation/genai_prompts.md
-  ```
+  jupyter notebook customer_retention_email.ipynb
+  ```  
 
 ---
 
 ## 🤝 Deliverables
 
-- 📂 **Churn Prediction ML Model** → `part_1_churn_prediction/`  
-- 📂 **GenAI Email Generation Code & Prompts** → `part_2_genai_email_generation/`  
-- 🎤 **Client Presentation** (CMO & CTO) prepared from insights and findings.  
+- 📂 **Churn Prediction ML Model** → `customer_churn.ipynb`  
+- 📂 **GenAI Email Generation Code & Prompts** → `customer_retention_email.ipynb`  
+- 🎤 **Client Presentation** PPT
 
 ---
 
@@ -130,5 +125,3 @@ pip install pandas scikit-learn openai matplotlib
 
 ---
 
-
----
